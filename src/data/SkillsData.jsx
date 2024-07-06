@@ -7,11 +7,11 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "React",
-  "MongoDB",
+  // "MongoDB",
   "NodeJS",
   "ExpressJS",
   "Git",
-  "Tailwind",
+  // "Tailwind",
 ];
 
 
