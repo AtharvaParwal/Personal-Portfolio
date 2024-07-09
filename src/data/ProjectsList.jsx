@@ -4,7 +4,8 @@ export const ProjectsList = {
       name: "FilmQuest",
       description: [
         "Developed FilmQuest using React.js, HTML, CSS, and JavaScript to create a dynamic and responsive movie search platform.",
-        "Designed the website to allow users to search for any movie and instantly access its story, rating, release date, genres, poster, and detailed producer information, fetching data from an external API for real-time, comprehensive results.",
+        "Designed the website to allow users to search for any movie and instantly access its story, rating, release date, genres, poster, and detailed producer information.",
+        "Integrated an external API to fetch real-time and comprehensive movie data, ensuring users have access to the latest information and a rich browsing experience.",
       ],
       technologies: ["React.js", "HTML", "CSS", "JavaScript"],
     },
