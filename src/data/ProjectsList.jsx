@@ -1,12 +1,12 @@
 export const ProjectsList = {
   projects: [
     {
-      name: "Resort Website",
+      name: "FilmQuest",
       description: [
-        "Designed and developed a resort website featuring distinct sections for hassle-free booking, seamless contact options, comprehensive amenities listings, enticing room descriptions, and authentic guest reviews, all aimed at enhancing user experience and satisfaction.",
-        "Implemented user-friendly interfaces and optimized functionality to streamline the booking process.",
+        "Developed FilmQuest using React.js, HTML, CSS, and JavaScript to create a dynamic and responsive movie search platform.",
+        "Designed the website to allow users to search for any movie and instantly access its story, rating, release date, genres, poster, and detailed producer information, fetching data from an external API for real-time, comprehensive results.",
       ],
-      technologies: ["HTML", "CSS", "JavaScript"],
+      technologies: ["React.js", "HTML", "CSS", "JavaScript"],
     },
     {
       name: "Simon Game",
@@ -18,12 +18,13 @@ export const ProjectsList = {
       technologies: ["HTML", "CSS", "JavaScript"],
     },
     {
-      name: "FilmQuest",
+      name: "Resort Website",
       description: [
-        "Developed FilmQuest using React.js, HTML, CSS, and JavaScript to create a dynamic and responsive movie search platform.",
-        "Designed the website to allow users to search for any movie and instantly access its story, rating, release date, genres, poster, and detailed producer information, fetching data from an external API for real-time, comprehensive results.",
+        "Designed and developed a resort website featuring distinct sections for hassle-free booking, seamless contact options, comprehensive amenities listings, enticing room descriptions, and authentic guest reviews, all aimed at enhancing user experience and satisfaction.",
+        "Implemented user-friendly interfaces and optimized functionality to streamline the booking process.",
       ],
-      technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+      technologies: ["HTML", "CSS", "JavaScript"],
     },
+    
   ],
 };
