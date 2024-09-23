@@ -19,11 +19,11 @@ export const UserData = {
       url: "https://leetcode.com/u/AtharvaParwal/",
       icon: "SiLeetcode",
     },
-    {
-      socialMediaName: "codechef",
-      url: "https://www.codechef.com/users/atharvaparwal",
-      icon: "SiCodechef",
-    },  
+    // {
+    //   socialMediaName: "codechef",
+    //   url: "https://www.codechef.com/users/atharvaparwal",
+    //   icon: "SiCodechef",
+    // },  
   ],
   typewriterOptions: {
     strings: [
