@@ -1,6 +1,15 @@
 export const ProjectsList = {
   projects: [
     {
+      name: "Pushup Tracker",
+      description: [
+        "Developed a real-time push-up tracking system using Python, OpenCV, and MediaPipe, integrating Flask-SocketIO to enable seamless live communication between the frontend and the Python backend for accurate push-up counting and instant updates.",
+        "Built a full-stack MERN application with MongoDB to store user data, including total push-ups, personal best, and levels, while implementing a dynamic user dashboard for real-time progress tracking and performance insights.",
+        "Implemented a competitive leaderboard system ranking the top 5 users based on total push-ups, personal best, and descending ID order, fostering user engagement and motivation through healthy competition."
+      ],
+      technologies: ["Python", "OpenCV", "MediaPipe", "Flask-SocketIO", "Node.js", "Express.js", "MongoDB", "React.js", "JavaScript", "CSS", "HTML"],
+    },    
+    {
       name: "FilmQuest",
       description: [
         "Developed FilmQuest using React.js, HTML, CSS, and JavaScript to create a dynamic and responsive movie search platform.",
