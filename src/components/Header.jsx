@@ -36,11 +36,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 flex w-full items-center justify-between text-base transition-all sm:px-4 lg:px-28 lg:pt-2
+      className={`fixed top-0 z-50 flex w-full items-center justify-between text-base transition-all px-4 py-3 sm:px-6 lg:px-28 lg:py-4
       ${isScrolling ? "sticky" : ""}`}
     >
       <nav className="hidden lg:block">
-        <div className="cursor-pointer items-center space-x-4 sm:flex sm:flex-col sm:gap-4 lg:flex lg:flex-row lg:gap-6">
+        <div className="cursor-pointer items-center space-x-6 sm:flex sm:flex-col sm:gap-4 lg:flex lg:flex-row lg:gap-8">
           <Link
             activeClass="active"
             spy={true}
@@ -52,7 +52,7 @@ const Header = () => {
             <p
               className={`${
                 activeSection === "Home-section" ? "active" : "text-white hover:text-gray-900"
-              } text-lg font-bold`} // Increase font size and make bold
+              } text-lg font-bold px-2 py-1`} // Added padding for better clickable area
             >
               Home
             </p>
@@ -68,7 +68,7 @@ const Header = () => {
             <p
               className={`${
                 activeSection === "About-section" ? "active" : "text-white hover:text-gray-900"
-              } text-lg font-bold`} // Increase font size and make bold
+              } text-lg font-bold px-2 py-1`} // Added padding for better clickable area
             >
               About
             </p>
@@ -84,7 +84,7 @@ const Header = () => {
             <p
               className={`${
                 activeSection === "Project-section" ? "active" : "text-white hover:text-gray-900"
-              } text-lg font-bold`} // Increase font size and make bold
+              } text-lg font-bold px-2 py-1`} // Added padding for better clickable area
             >
               Projects
             </p>
@@ -100,7 +100,7 @@ const Header = () => {
             <p
               className={`${
                 activeSection === "Contact-section" ? "active" : "text-white hover:text-gray-900"
-              } text-lg font-bold`} // Increase font size and make bold
+              } text-lg font-bold px-2 py-1`} // Added padding for better clickable area
             >
               Contact
             </p>
@@ -110,18 +110,18 @@ const Header = () => {
               onClick={() => {
                 window.open(resumeUrl);
               }}
-              className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white text-lg font-bold" // Increase font size and make bold
+              className="button-UI w-[120px] rounded-lg px-4 py-2 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white text-lg ml-2" // Better padding and margin
             >
               Resume
             </button>
           </div>
         </div>
       </nav>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden pr-4"> 
         {" "}
-        {/* Show on small screens */}
+        {/* Show on small screens with proper right padding */}
         <button
-          className="mr-5 block hover:text-gray-900 focus:outline-none"
+          className="block hover:text-gray-900 focus:outline-none p-2"
           onClick={toggleMobileMenu}
         >
           <CgMenuRight size={32} />
@@ -129,9 +129,9 @@ const Header = () => {
       </div>
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <nav className="absolute left-0 top-full block w-full lg:hidden">
+        <nav className="absolute left-0 top-full block w-full lg:hidden shadow-lg">
           <div
-            className={`navbar-bg flex flex-col items-center space-y-4 py-4`}
+            className={`navbar-bg flex flex-col items-center space-y-6 py-6 px-4`}
           >
             <Link
               activeClass="active"
@@ -146,7 +146,7 @@ const Header = () => {
                   activeSection === "Home-section"
                     ? "active"
                     : "text-black hover:text-gray-900"
-                } text-lg font-bold`} // Increase font size and make bold
+                } text-lg font-bold px-3 py-2`} // Added padding for mobile menu items
                 onClick={toggleMobileMenu}
               >
                 Home
@@ -165,7 +165,7 @@ const Header = () => {
                   activeSection === "About-section"
                     ? "active"
                     : "text-black hover:text-gray-900"
-                } text-lg font-bold`} // Increase font size and make bold
+                } text-lg font-bold px-3 py-2`} // Added padding for mobile menu items
                 onClick={toggleMobileMenu}
               >
                 About
@@ -184,7 +184,7 @@ const Header = () => {
                   activeSection === "Project-section"
                     ? "active"
                     : "text-black hover:text-gray-900"
-                } text-lg font-bold`} // Increase font size and make bold
+                } text-lg font-bold px-3 py-2`} // Added padding for mobile menu items
                 onClick={toggleMobileMenu}
               >
                 Projects
@@ -203,7 +203,7 @@ const Header = () => {
                   activeSection === "Contact-section"
                     ? "active"
                     : "text-black hover:text-gray-900"
-                } text-lg font-bold`} // Increase font size and make bold
+                } text-lg font-bold px-3 py-2`} // Added padding for mobile menu items
                 onClick={toggleMobileMenu}
               >
                 Contact
@@ -214,7 +214,7 @@ const Header = () => {
                 onClick={() => {
                   window.open(resumeUrl);
                 }}
-                className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white text-lg font-bold" // Increase font size and make bold
+                className="button-UI w-[120px] rounded-lg px-4 py-2 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white text-lg mt-2" // Better spacing for mobile
               >
                 Resume
               </button>
