@@ -51,6 +51,7 @@ function Cards({ projects }) {
     </>
   );
 }
+
 Cards.propTypes = {
   projects: PropTypes.arrayOf(
     PropTypes.shape({
